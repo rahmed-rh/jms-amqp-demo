@@ -1,0 +1,9 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: spring-boot-camel-amq-config
+  labels:
+    application: amq-interconnect-mesh
+data:
+  service.host: amq-interconnect-mesh.broker-mesh-zone-a.svc.cluster.local
+  service.port.amqps: 5671
